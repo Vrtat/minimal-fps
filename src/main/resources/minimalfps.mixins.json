@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "package": "dev.minimalfps.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["GuiMixin", "LevelRendererMixin", "HandMixin"],
+  "injectors": { "defaultRequire": 0 }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "minimalfps",
+  "version": "${version}",
+  "name": "Minimal FPS",
+  "description": "Strips the client down for an empty superflat world.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.minimalfps.MinimalFpsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "minimalfps.mixins.json"
+  ]
+}
