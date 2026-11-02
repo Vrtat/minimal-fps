@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.CloudStatus;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
-import net.minecraft.client.ParticleStatus;
 
 public class MinimalFpsClient implements ClientModInitializer {
     private boolean applied = false;
@@ -28,11 +27,9 @@ public class MinimalFpsClient implements ClientModInitializer {
         o.enableVsync().set(false);
         o.biomeBlendRadius().set(0);
         o.entityShadows().set(false);
-        o.particles().set(ParticleStatus.MINIMAL);
         o.cloudStatus().set(CloudStatus.OFF);
         o.mipmapLevels().set(0);
         o.entityDistanceScaling().set(0.5);
-        o.hideGui = true;
         o.getSoundSourceOptionInstance(net.minecraft.sounds.SoundSource.MASTER).set(0.0);
         o.save();
     }
